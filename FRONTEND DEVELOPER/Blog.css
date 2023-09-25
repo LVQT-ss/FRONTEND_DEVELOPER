@@ -1,0 +1,10 @@
+/* Trong tệp Blog.css */
+body {
+    background-image: url("https://seeklogo.com/images/P/progess-logo-17F23ACABE-seeklogo.com.png");
+    background-repeat: no-repeat;
+}
+/* Trong tệp Blog.css hoặc tệp CSS của bạn */
+img {
+    width: 1000px; /* Đặt chiều rộng của hình ảnh thành 100px */
+    height: 1000px; /* Để giữ tỷ lệ khung hình khi thay đổi kích thước */
+}
