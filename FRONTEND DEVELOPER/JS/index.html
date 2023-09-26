@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("hello world")
+        console.log('hello word')
+
+        var  name = ' le viet quoc thinh'
+        document.write(name)
+
+        let fNum = 5;
+        let SNum=  3; 
+        document.write(fNum+SNum)
+
+        let thinh = {
+            name : ' quoc thing ',
+            age: 20,
+            sing: function(){
+                document.write("hello cac ban minh la ...")
+            }
+        };
+        document.write(thinh.name)
+        thinh.sing();
+
+
+
+        let cauChao= " watashi wa quocthinh desu"
+        document.write(cauChao.length)
+        document.write(cauChao.split(' '))
+        const mang = new Array(4)
+        mang[0]='le'
+        mang[1]='viet'
+        mang[2]='quoc'
+        mang[3]='thinh'
+        console.log(mang)
+        document.write(mang)
+
+        const num = 10 ;
+         if (num > 5){
+            console.log('anh hoang dep trai ')
+         }
+
+
+
+         const input = 2
+         switch(input) { 
+            case 1:
+                console.log('1.nhập sản phẩm')
+                break;
+            case 2 : 
+            console.log('in sản phẩm')
+            break;
+            default:
+                break;
+         }
+
+         const ten = [ 'le','viet','quoc','thinh']
+         for (const trai of ten){
+            document.write(trai + '<br/>')
+         }
+
+         for (let  index = 0;index < ten.length;index++){
+            console.log({index})
+            const trai = ten[index];
+            document.write(trai+'<br/>')
+         }
+
+        
+         
+         function printToN(n){
+            for(let i = 1; i <= n;i++ ){
+            document.write(i + '<br/>')
+         }
+        }
+        printToN(5)
+    </script>
+</body>
+</html>
