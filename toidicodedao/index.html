@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vếu cùng code dạo</title>
+    <style>
+        #body{
+            position: relative;
+            width: 500px;
+            height: 800px;
+            left: 20px;
+            cursor: pointer;
+            transition: all 1s;
+
+        }
+        #status{
+            font-size: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img width="500px" height="800px" src="https://cdn.bookingcare.vn/fo/2019/10/07/000347avatar.jpg" >
+    </div>
+    <div>
+        <img src="https://thammyhanquoc.vn/wp-content/uploads/2018/11/tac-co-bung-6-mui-6.jpg" id="body">
+        
+    </div>
+    <div>
+        <img width="500px" height="800px" src="https://assets.nhs.uk/nhsuk-cms/images/Knocked_Knees_Edit_copy.width-320.png" >
+    </div>
+    <span id ='status'>6 muối</span>
+    <script>
+        function playsound(){
+            const audio = new Audio('body.mp3');
+            audio.play();
+        }
+
+        const theBody = document.querySelector('#body');
+        const status = document.querySelector('#status');
+
+    theBody.onclick= () => {
+        playsound()
+        theBody.style.top = "-50px";
+        setTimeout(() => {
+            theBody.style.top = "-10px";
+        },1000);
+    }
+
+    theBody.onmouseover = () => { 
+        body.style.width = '1000px';
+        status.innerText="chạm vào đi ";
+    }
+    body.onmouseleave = () =>{
+        body.style.width = '500px';
+        status.innerText= "yamete kudasai "
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+p{
+    justify-content: center;
+    align-items: center ;
+}
+
+<!--
+
+Chào mừng bạn đến Flexbox Froggy, một trò chơi để bạn giúp đỡ Froggy và bạn bè bằng cách viết mã CSS! Hướng dẫn chú ếch này đến lá bông súng bên phải bằng cách sử dụng từ justify-content để sắp xếp các hạng mục theo chiều ngang và chấp nhận các giá trị sau:
+
+flex-start: Các hạng mục sẽ được sắp xếp về phía bên trái của hộp chứa.
+flex-end: Các hạng mục sẽ được sắp xếp về phía bên phải của hộp chứa.
+center: Các hạng mục sẽ được sắp xếp ở giữa chính của hộp chứa.
+space-between: Các hạng mục sẽ được trình bày với khoảng cách bằng nhau giữa chúng.
+space-around: Các hạng mục sẽ được trình bày với khoảng cách bằng nhau xung quanh chúng.
+Ví dụ như, justify-content: flex-end; sẽ di chuyển chú ếch qua bên phải.
+
+Bây giờ sử dụng align-items để giúp những chú ếch đến đáy của ao. Từ thuộc tính CSS này sắp xếp những hạng mục theo chiều dọc và chấp nhận các giá trị sau:
+
+flex-start: Các hạng mục sẽ được sắp xếp phía trên của hộp chứa.
+flex-end: Các hạng mục sẽ được sắp xếp phía dưới cùng của hộp chứa.
+center: Các hạng mục sẽ được sắp xếp ở giữa chính của hộp chứa.
+baseline: Các hạng mục sẽ được hiển thị ở đường cơ bản của hộp chứa.
+stretch: Các hạng mục sẽ được kéo dài để phù hợp với hộp chứa.
+
+Giúp đỡ những chú ếch tìm thấy các lá bông súng được sắp xếp theo hàng dọc sử dụng flex-direction. Từ thuộc tính CSS này xác định hướng hạng mục được đặt trong hộp chứa, và chấp nhận các giá trị sau:
+
+row: Các hạng mục được đặt cùng hướng với hướng của từ trong văn bản.
+row-reverse: Các hạng mục được đặt ngược hướng với hướng của từ trong văn bản.
+column: Các hạng mục được đặt từ trên xuống dưới.
+column-reverse: Các hạng mục được đặt từ dưới lên trên. 
+
+
+Những chú ếch đang lan rộng trên cả ao, nhưng các lá bông súng đang chụm lại ở phía trên. Bạn có thể dùng align-content để thiết lập cách các dòng có khoảng cách xa nhau như thế nào. Những thuộc tính này có giá trị như sau:
+
+flex-start: Các dòng được dồn về phía trên cùng của hộp chứa.
+flex-end: Các dòng được dồn về phía dưới cùng của hộp chứa.
+center: Các dòng được dồn về trung tâm của hộp chứa.
+space-between: Các dòng được trình bày với khoảng cách bằng nhau giữa chúng.
+space-around: Các dòng sẽ được trình bày với khoảng cách bằng nhau xung quanh chúng.
+stretch: Các dòng sẽ được kéo dài để phù hợp với hộp chứa.
+Điều này có thể gây nhầm lẫn, nhưng align-content xác định khoảng cách giữa các dòng, trong khi align-items xác định cách các hạng mục như một toàn thể được xếp trong hộp chứa. Khi chỉ có một dòng, align-content không có hiệu lực
+
+-->
