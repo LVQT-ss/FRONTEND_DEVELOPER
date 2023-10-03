@@ -28,24 +28,16 @@
     vh- viewport heigh 
 
     Padding trong CSS : 1 tham số : all 2 tham số : trên dưới trái phải - 3 tham số :   trên, trái phải, dưới  - 4 tham số : trên phải dưới trái 
-    border trong CSS
+    border trong CSS : lớp vỏ viền ngoài cùng bao 1 element 
+    margin trong CSS : cách xa ra box 2 
+    Box - sizing trong CSS : box-sizing: border-box; tự căn chỉnh tự động tính toán để cho chữ phù hợp với khung hình
+    Background-clip : đổ màu cho content , padding , margin '
+    Background-origin : 
+    CSS FUNCTION : calc() rgb()...
 
-
+    position : relative  tương đối di chuyển bất kì trong frame 
 -->
-<style>
-    html{
-        font-size: 40px;
-    }
-   h1{
-        font-size: 1rem;
-    } 
-    .box{
-        
-        width: 50%;
-        height: 20vh;
-        background-color: red ;
-    }
-</style>
+
 <div class="box"></div>
 <link rel="stylesheet" href="index.css">
 <h1  title="đ0ây là cái tiêu đề "> lê viết quốc thịnh</h1>
@@ -72,28 +64,22 @@
 <button>ĐĂNG KÍ </button>
 
 <style>
+    html,body{
+        margin : 0;
+    }
     .box{
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
         color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+background-color: darkorchid;
+padding: 16px;
+border : 2px solid #333;
+box-sizing: border-box;
+        font-size: 15px;
+    }
 
-    }
-    .box1{
-        background-color: black;
-    }
-    .box2{
-        background-color: yellow;
-    }
-    .box3{
-        background-color: red;
-    }
 </style>
 
 <body>
-    <div class="box box1">box1</div>
-    <div class="box box2">box2</div>
-    <div class="box box3">box3</div>
+    <div class="box">ĐÂY LÀ NỘI DUNG BÀI VIẾT </div>
 </body>
