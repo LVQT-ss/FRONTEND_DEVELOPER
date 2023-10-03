@@ -18,9 +18,35 @@
     mức độ ưu tiên trong css:
     internal , external - inline - #id - .class - tag 
 
-    CSS variable  - :root 
--->
+    CSS variable  - :root đặt root này để cùng lúc đổi màu nhiều nơi mà đã dặt là var 
 
+    CSS unit : đơn vị tùy chỉnh kích thước trong website gồm absolute units(px) và relative units (%,rem,em,vw,vh) 
+    % phụ thuộc vào thẻ chứ nó ( sẽ tự thay đổi kích thước khi mà body thay đổi kích thước )
+    rem thụ thuộc vào thẻ font size được định nghĩa ở html ( hay dùng nhất ) 100% là 16 pixel 
+    em phụ thuộc vào thẻ gần nhất chứa nó thẻ cha gần nhất 
+    vw- viewport width 
+    vh- viewport heigh 
+
+    Padding trong CSS : 1 tham số : all 2 tham số : trên dưới trái phải - 3 tham số :   trên, trái phải, dưới  - 4 tham số : trên phải dưới trái 
+    border trong CSS : lớp vỏ viền ngoài cùng bao 1 element 
+
+
+-->
+<style>
+    html{
+        font-size: 40px;
+    }
+   h1{
+        font-size: 1rem;
+    } 
+    .box{
+        
+        width: 50%;
+        height: 20vh;
+        background-color: red ;
+    }
+</style>
+<div class="box"></div>
 <link rel="stylesheet" href="index.css">
 <h1  title="đ0ây là cái tiêu đề "> lê viết quốc thịnh</h1>
 <p >lê viết quốc thịnh</p>
@@ -44,3 +70,30 @@
 <input name="thinh" type="radio">
 <input name ="thinh" type="radio">
 <button>ĐĂNG KÍ </button>
+
+<style>
+    .box{
+        width: 60px;
+        height: 60px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .box1{
+        background-color: black;
+    }
+    .box2{
+        background-color: yellow;
+    }
+    .box3{
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+</body>
