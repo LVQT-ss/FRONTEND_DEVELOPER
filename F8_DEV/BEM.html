@@ -12,9 +12,9 @@
         <button class="btn btn--danger">TRY AGAIN</button>
     </div>
     <div>
-        <button class="btn btn--success btn--disable">GO TO </button>
-        <button class="btn btn--warn">OK</button>
-        <button class="btn btn--danger">TRY AGAIN</button>
+        <button class="btn btn--size-l btn--success btn--disable">GO TO </button>
+        <button class="btn btn--size-l  btn--warn">OK</button>
+        <button class="btn btn--size-l  btn--danger">TRY AGAIN</button>
     </div>
     <div>
         <button class="btn btn--success btn--disable">GO TO </button>
@@ -34,6 +34,8 @@
         margin: 0;
         padding: 12px 48px;
         flex-direction: column;
+      
+
     }
     .btn {
     margin-bottom: 10px; /* Adjust this value for spacing between buttons */
@@ -44,6 +46,7 @@
         outline: none;
         cursor: pointer;
         transition: opacity .2s ease;
+        border-radius: 20px;
     }
     .btn:hover{
         opacity:  0.4;
@@ -60,6 +63,8 @@
     .btn--danger{
         background-color: red;
     }
-
+.btn--size-l {
+    padding: 6px 16px;
+}
 
 </style>
