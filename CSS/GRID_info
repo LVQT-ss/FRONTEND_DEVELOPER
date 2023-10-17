@@ -1,0 +1,5 @@
+Gird gồm các thành phần gì: 
+khi chúng ta set cho thuộc tính bất kì element nào thì chúng ta có GRID CONTAINER và các con của nó sẽ trực tiếp trở thành GRID ITEM
+Trên grid sẽ có các dòng và các cột . mỗi 1 hàng hay 1 cột thì gọi là GRID TRACK(rãnh) được tạo nên bởi 2 lề GRID LINE 1 và GRID LINE 2 ( lề trên và lề dưới )
+Các grid line khi giao nhau thì tạo thành GRID CELL đây là đơn vị nhỏ nhất trong css grid . 
+GRID AREA là luôn luôn phải hình chữ nhật hoặc hình vuông được tạo nên bởi các grid cell

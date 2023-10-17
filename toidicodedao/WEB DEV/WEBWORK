@@ -1,0 +1,38 @@
+BROWSER NHẬP URL GOOGLE.COM 
+MÁY ĐỌC FILE HOST . FILE HOST TRONG MÁY CỦA BẠN ĐỂ XEM LÀ DOMAIN NÀY TƯƠNG ĐƯƠNG VỚI IP NÀO ( KHÔNG CÓ THÌ TRÌNH DUYỆT SẼ HỎI DỊCH VỤ CÓ TÊN LÀ DNS( DOMAIN NAME SERVER) dịch tên google thành địa chỉ ip ( ip google là 10.003.1 v.v. ) từ ip kết nối với máy chủ của google để lấy thông tin
+
+Khi client biết địa chỉ ip của server google thì thông qua giao thức tcp để kết nối . Đầu tiên là dung giao thức TCP chúng ta gửi tín hiệu là sync server sẽ gữi lại 1 tín hiệu sync-ack  -> client sẽ gửi lại tín hiệu ack để xác nhận = > kết nối giữa browser và server đã được thiết lập 
+Tiếp theo thì browser sẽ nói chuyện với server thông qua giao thức HTTP ( giao thức nằm trên TCP để truyền dữ liệu ) server sẽ trả về HTML để render  
+
+
+
+
+
+
+
+
+
+QUY TRÌNH TẠO RA MỘT TRANG WEB NHƯ THẾ NÀO 
+Đầu tiên muốn tạo ra một trang web cần có 2 phần : 
+1.	Domain (google.com , ytb.com ) 
+2.	Host (server ) là nơi chứa code php java c#
+
+Host gồm cpu và ram 
+
+Móc nối domain và host : vào phần config/admin của nó thì các bạn có thể set thuộc tính của domain đó 
+Khi mà người dung gõ browser google.com thì request sẽ đi lên DNS sẽ dịch cái tên google.com thành 119.111 nơi mà chứ host gọi tới server trả về 
+
+
+BACKEND – SERVER Hoạt động như thế nào 
+FONTEND ----- HTTP ----- BACKEND 
+
+ 
+
+ HTTP là giao thức stateless không cho biết người dung là ai 
+
+Cookie : bạn đăng nhập vào một trang web. Khi bạn đăng nhập thành công, trang web có thể tạo một cookie chứa mã xác thực của bạn. Khi bạn truy cập các trang khác trên trang web đó, cookie sẽ được gửi cùng với yêu cầu, cho phép trang web biết bạn đã đăng nhập và hiển thị thông tin cá nhân của bạn.
+Session : Giải thích: Session là một cách lưu trữ thông tin trạng thái người dùng trên máy chủ web. Thông tin session thường được lưu trữ tạm thời trong suốt thời gian kết nối của người dùng với ứng dụng web. Mỗi phiên là duy nhất cho mỗi người dùng và thông tin session thường được lưu trữ trên máy chủ. Ví dụ: Khi bạn đăng nhập vào một ứng dụng web, một phiên session có thể được tạo và lưu trên máy chủ. Trong phiên này, thông tin về bạn (như tên, địa chỉ email) có thể được lưu trữ để ứng dụng có thể sử dụng cho các hoạt động trong phiên đó. Khi bạn đăng xuất hoặc phiên kết thúc, thông tin session này sẽ bị xóa.
+Database 
+
+
+

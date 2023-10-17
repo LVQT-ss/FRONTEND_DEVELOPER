@@ -1,0 +1,25 @@
+To understand the internet, we need to understand what a Network is 
+What is network ? 
+-	Network is a group of computers or other devices which are connected to each other.
+	The internet is a network of networks
+What is HTTP ? 
+-	HTTP  ( Hypertext Transfer Protocol ) : Is the protocol used to transfer data between a client and server
+-	HTTPS ( HTTP secure ) : is a more secure version of HTTP, which encrypts the data being transmitted between the client and server using SSL/TLS (secure sockets layer/ transport layer security) 
+What is Domain name ? 
+-	DOMAIN NAME: a human-readable web address to identify and access websites on the internet
+-	DOMAIN NAME include :  + Top-level Domain (TLD) : .com .org .vn 
+   + Second-level Domain (SLD): phần trước của TLD 
+   + Sub Domain ( optional) : phần SLD
+What is hosting ? 
+-	Hosting is service that allows individuals and organizations to make their websites and web applications accessible on the internet. 
+
+DNS and how it works ? 
+-	DNS : Domain Name System responsible for translating domain name into IP address.
+-	When you enter a domain name into your web browser, your computer sends a DNS query to a DNS server, which return the corresponding IP address. The computer use that IP Address to connect to the website .
+How browsers work ? 
+-	Web browsers are software applications that enable users to access and interact with information on the World Wide Web. They function as user interfaces for viewing websites, web pages, and web applications.
+
+
+•	IP ADDRESS : a unique identifier assigned to each device on a network, used to route data to the correct destination
+•	Protocol là giao thức mạng tập hợp các quy tắc được thiết lập nhằm xác định cách để định dạng, truyền và nhận dữ liệu sao cho các thiết bị bang máy từ từ server và router tới endpoint có thể giao tiếp với nhau . 
+
