@@ -1,0 +1,7 @@
+Các bước sử dụng bostrap : 
+1. khai báo HTML5 DOCTYPE 
+<html lang="em">
+2. mobile first - boostrap3 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+width=device-width sẽ hiển thị tùy theo độ rộng thiết bị 
+initial-scale=1.0 mức zoom ban đầu 

@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #1a1c28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form{
+    display: flex;
+    max-width: 50rem;
+    flex-wrap: wrap; /* thêm vào để khi maxwitd cho desktop cho đủ chỗ chứa  */
+    margin: 0 auto;
+    width: 100%;
+}
+.form__input{
+    padding: 1.5rem;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1.4rem;
+    background-color: white;
+    display: block;
+    flex-grow: 1;
+    /* width: 100%;
+    margin-bottom: 10px; cho mobile  */
+}
+.form__submit{
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    border: 0 ; 
+    outline: none;
+    cursor: pointer;
+    background-color: #00aefd;
+    margin-left: 1rem;
+    flex-shrink: 0;
+    border-radius: 4px;
+    /* width: 100%; CHO MOBILE  */
+}
+/* mobile first  */
+/* >= 768 */
+/* @media screen and (min-width: 768px){
+    .form{
+        display: flex;
+    }
+    .form__submit{
+        width: auto;
+        margin-left: 1rem;
+    }
+    .form__input{
+        width: auto;
+        margin-bottom: 0;
+
+    }
+} 
+@media screen and (min-width: 1024px){
+    .form__submit{
+        background-color: #ffa400;
+    }
+} */
+/*  destop first  */
+/* khi code destop first thì lấy mobile first trừ cho 1 và xài max-width */
+/* @media screen and (max-width:767px){
+    
+} */
+
+/* mobile first  */
+@media screen and (min-width: 768px){
+    .form__submit{
+        background-color: red;
+    }
+} 
+@media screen and (min-width: 1024px){
+    .form__submit{
+        background-color: #ffa400;
+    }
+}
+@media screen and (max-width: 767px){
+    .form__input,
+    .form__submit{
+        width: 100%;
+    }
+    .form__input{
+        margin-bottom: 1rem;
+    }
+    .form__submit{
+        margin-left: 0;
+    }
+}
