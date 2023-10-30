@@ -1,0 +1,63 @@
+<head></head>
+Nhập tên : <input id="input" value>
+<br>
+<button onclick="xin_chao()">Ok</button>
+<div id ="loi_chao"></div>
+<script>
+    var xin_chao = function(){
+      var ten =  document.getElementById("input").value
+      var loi_chao =" xin chào " + ten
+      document.getElementById("loi_chao").innerHTML =  loi_chao
+    }
+    //dùng if else 
+    // var tuoi = 18 
+    // tuoi = parseInt(  window.prompt("Nhập tuổi của bẹn ") ) 
+    // if (tuoi >=16 ){
+    //     document.write("quất luôn")
+    // } else {
+    //     document.write("rút ")
+    // }
+    // document.write(tuoi)
+    // var ten ="emi fukada "
+    // var con_zin=false
+    
+    // console.log("kimocho")18
+
+        //vòng lặp for 
+        // tuoi = parseInt(  window.prompt("Nhập tuổi của bẹn ") ) 
+        // for ( var i =0 ;i < 10; i= i +1  ){
+        //     document.write("Năm nay em", tuoi + i, "tuổi.<br>")
+        // }
+            // Object trong js 
+    //     var tuoi =  0
+    //     var co_hang_xom = {
+    //         ten :"lan",
+    //         tuoi:18,
+    //         hon_nhan:false,
+    //         dia_chi:{
+    //             quan :"cau giay",
+    //             phuong:"mai dich"
+    //         }
+
+    //     }
+    //     var tinh_tuoi = function(){
+    //         var nam_sinh = parseInt(window.prompt("nhập năm sinh "))
+    //     tuoi = 2023 - nam_sinh
+    //     document.write(tuoi)
+    //     return tuoi
+    //     }
+    //    // tinh_tuoi()
+    //     var a =['le','viet','quoc','thinh']
+    //     a[2] = "quoc thingh"
+    //     document.write(a)
+    var thong_bao=function(){
+        document.getElementById("loi_chao").innerHTML ="hẾT GIỜ"
+    }
+
+       setTimeout(thong_bao,3000)
+       document.getElementById("loi_chao").innerHTML ="xin chào"
+
+       //local storage 
+       localStorage.ten = " quoc thinhg coder "
+        localStorage.diachi="ha noi "
+</script>
