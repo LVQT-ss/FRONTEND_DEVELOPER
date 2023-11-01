@@ -1,0 +1,52 @@
+---------------lộ trình-----------------
+1.JPA, JPA Mapping 
+2. Hibernate
+3. Căn bản về Spring Framework
+4. Spring Web Development, Spring MVC
+5. Spring Boot (Spring Data with MongoDB, MySQL, Thymeleaf)
+6. RESTful Spring Boot
+7. ReactJS kết nối với RESTful API dùng Spring Boot
+8. Microservices with Spring Cloud (Heroku, Docker, AWS)
+
+-------Câu hỏi phỏng vấn---------------
+
+Kiến thức JS/ReactJS nên nắm vững trước buổi phỏng vấn
+HTML/CSS
+• Layout bằng flexbox, grid.
+• Hỏi về UI library bạn sử dụng: Bootstrap, Material Design, Ant Design.
+• Hỏi về cách bố trí layout.
+• Cho một phần giao diện nào đó, hỏi bạn làm thế nào để ra được như vậy (chỉ trình bày, ko code)
+• Hỏi về cách tổ chức styles trong project.
+• BEM là gì? Apply như thế nào?
+• SCSS: có gì vui với ông này, có những tính năng nào mà bạn đã sử dụng.
+• Specificity: độ cụ thể trong css
+• Làm sao customize được styles của một thư viện UI nào đó.
+• Reset CSS vs Normalize CSS
+JAVASCRIPT
+• “use strict”
+• var, const, let khác nhau ra sao?
+• Block scope với Function scope
+• Hoisting là gì? Cái này có thể bị hỏi dạng cho đoạn code rồi hỏi kết quả và giải thích.
+• Closure
+• Value type vs reference type
+• Bất đồng bộ trong javascript
+• setTimeout(), setInterval()
+• Callback
+• Promise
+• Module trong javascript: import, export, …
+• ES6: arrow function, for…of, async for…of, async/await, …
+• Cho các tình huống xử lý javascript, bạn vận dụng kiến thức để cung cấp giải pháp giải quyết nó.
+REACTJS
+• Component vs PureComponent
+• Life cycle: cái nào nên sử dụng cho mục đích nào (cái này mình có share trên kênh Youtube của mình)
+• Phân biệt component state, Context API và Redux: khi nào sử dụng cái nào và lý do.
+• Refs trong reactjs: bạn có dùng nó chưa và dùng cho việc gì? Hoặc ngược lại cho tình huống xài refs để giải quyết xem bạn có biết hay không ?
+• Routing thì có phần nested routing, nó là gì và khi nào cần nó.
+• Setup routing cho mấy trang cần phải log in như thế nào?
+• Form bạn dùng thư viện nào để quản lý: Formik, Redux-Form, React-Hook-Form. Mỗi cái sẽ có những vấn đề riêng có thể hỏi.
+• Auth: bạn handle phần authentication trong app như thế nào? Token, refresh token, expired token? ( nâng cao )
+• React hooks: bạn sử dụng hooks nào và cho mục đích gì?
+• Custom hook: bạn có tự viết một custom hook nào chưa, nếu có thì nó dùng để làm gì ?
+• Redux thì giờ có Redux Toolkit. Nó là gì?
+• Quản lý state bên Facebook đang có thư viện mới là Recoil: bạn có nghe về nó không? bạn thấy thế nào?
+• Những thư viện bạn hay dùng trong reactjs project.
