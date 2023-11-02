@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">i am a loser</p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demoFunction"></p>
+    <p id="demoObject"></p>
+<!-- onclick is a event  -->
+    <input type="button" onclick='document.getElementById("demo").innerHTML = "i will win "' value="click me to change">
+
+   <button type="button" onclick='document.getElementById("demo").innerHTML = "i will win "'>click me to change </button>
+
+   <button onclick="window.print()">Print this page</button>
+    
+
+  <!-- OUTPUT JS -->
+<script>
+    document.write(5 + 6 )
+    // alert(5 + 6);
+    document.getElementById("demo2").innerHTML="new chapter"
+
+   
+//  DATA TYPE JS 
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+// function 
+myFun(3,4)
+document.getElementById("demoFunction").innerHTML = n 
+function myFun(a,b){
+    n = a +b 
+}
+
+const perso = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.getElementById("demoObject").innerHTML = perso.fullName()
+
+// event 
+
+</script>
+</body>
+</html>
