@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <input type="text" value="OFF" readonly/>
+        <button type="button">Click Me</button>
+      </div>
+      
+      <script>
+      // assign the correct elements to the variables
+      const buttonElem = document.querySelector("#wrapper button");
+      const inputElem = document.querySelector("#wrapper input");
+      
+      buttonElem.addEventListener('click', () => {
+        const oldText = inputElem.value;
+        inputElem.value = oldText === "ON" ? "OFF" : "ON";
+      });
+      </script>
+      
+</body>
+</html>

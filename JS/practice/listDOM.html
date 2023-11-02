@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+        .off li {
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .off li:hover {
+            background-color: lightcoral; /* Đặt màu nền khi di chuột vào */
+            color: white; /* Đổi màu chữ khi di chuột vào */
+        }
+    </style>
+</head>
+<body>
+    <ul class="off" id="list">
+        <li>OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+    </ul>
+
+    <script>
+        const listItems = document.querySelectorAll('#list li'); // Select all list items
+
+        listItems.forEach(item => {
+            let isOn = false; // Theo dõi trạng thái ON/OFF
+
+            item.addEventListener('mouseover', () => {
+                if (isOn) {
+                    item.innerText = 'OFF'; // Nếu đang ở trạng thái ON, chuyển về OFF
+                } else {
+                    item.innerText = 'ON'; // Nếu đang ở trạng thái OFF, chuyển sang ON
+                }
+                isOn = !isOn; // Đảo ngược trạng thái
+            });
+        });
+    </script>
+</body>
+</html>
