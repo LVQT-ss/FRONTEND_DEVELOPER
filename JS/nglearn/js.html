@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+  <style>
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="myHeading">Hello World!</h1>
+
+  <button onclick="changeText()">Đổi nội dung</button>
+
+  <script>
+    function changeText() {
+      var heading = document.getElementById("myHeading");
+      heading.innerHTML = "Xin chào!";
+      heading.classList.add("highlight");
+    }
+  </script>
+</body>
+</html>
