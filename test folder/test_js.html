@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <div id="myDiv">This is a div with ID.</div>
+    <p class="myClass">This is a paragraph with class.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script>
+        // Sử dụng getElementById
+        const elementById = document.getElementById("myDiv");
+        elementById.textContent = "Updated using getElementById";
+
+        // Sử dụng querySelector
+        const elementBySelector = document.querySelector(".myClass");
+        elementBySelector.textContent = "Updated using querySelector";
+
+        const elementByComplexSelector = document.querySelector("ul li:first-child");
+        elementByComplexSelector.textContent = "Updated using querySelector (complex)";
+    </script>
+</body>
+</html>
