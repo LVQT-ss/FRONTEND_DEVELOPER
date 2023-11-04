@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul{
+        display: none;
+    }
+    input:focus ~ ul{
+        display: block;
+    }
+</style>
+<body>
+    
+    <input placeholder="tìm kiếm">
+
+    <ul>
+        <li>JS</li>
+        <li>PHP</li>
+        <li>GoLang</li>
+    </ul>
+
+</body>
+<script>
+   var ulelement= document.querySelector('ul');
+ ulelement.onmousedown = function(e){
+    e.preventDefault();
+ }
+    ulelement.onclick = function(e){
+        console.log(e.target);
+    }
+</script>
+</html>

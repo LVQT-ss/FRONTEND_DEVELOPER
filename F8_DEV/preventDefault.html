@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.facebook.com/"> đăng nhập facebook</a>
+    <br>
+    <a href="https://www.google.com/">tìm kiếm google</a>
+</body>
+<script>
+    var element = document.links;
+    
+    for(var i =0 ; i<element.length;++i){
+        element[i].onclick=function(e){
+            if (!e.target.href.startsWith('https://www.google.com/')){
+                e.preventDefault();
+            }
+        }
+    }
+</script>
+</html>
