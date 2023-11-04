@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <input type="checkbox">
+    <select >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+</body>
+<script>
+    //1 input - select 
+    // var inputElement = 
+    // document.querySelector('input[type="text"]');
+
+    // inputElement.onchange= function(e){
+    //     console.log(e.target.value);
+    // }
+    
+    var inputElement = 
+    document.querySelector('input[type="checkbox"]');
+
+    inputElement.onchange= function(e){
+        console.log(e.target.value);
+    }
+    var inputElement = 
+    document.querySelector('select');
+
+    inputElement.onchange= function(e){
+        console.log(e.target.value);
+    }
+    // key up /down 
+    var inputElement = 
+    document.querySelector('input[type="text"]');
+
+    inputElement.onkeyup= function(e){
+        console.log(e);
+    }
+</script>
+</html>
