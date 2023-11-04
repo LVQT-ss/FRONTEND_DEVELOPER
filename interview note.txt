@@ -30,7 +30,7 @@ JAVASCRIPT
 • Closure
 • Value type vs reference type
 • Bất đồng bộ trong javascript
-• setTimeout(), setInterval()
+• setTimeout(), setInterval()   - của thuật ngữ built-in timout thì sau bao nhiêu giây thì sẽ hoạt động  interval- thì bao nhiêu giây thì nó in ra liên tục 
 • Callback
 • Promise
 • Module trong javascript: import, export, …
