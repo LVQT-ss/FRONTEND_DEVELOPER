@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+    background-color: lightblue;
+}
+
+.inactive {
+    background-color: lightgray;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div id="myElement">This is a div element</div>
+    <button id="addClassBtn">Add Class</button>
+    <button id="removeClassBtn">Remove Class</button>
+    <button id="toggleClassBtn">Toggle Class</button>
+    <button id="checkClassBtn">Check Class</button>
+
+    
+    <script>// Lấy tham chiếu đến một phần tử HTML có id là "myElement"
+        var element = document.getElementById("myElement");
+        
+        // Thêm lớp "active" vào phần tử
+        element.classList.add("active");
+        
+        // Xóa lớp "inactive" nếu có
+        element.classList.remove("inactive");
+        
+        // Chuyển đổi lớp "highlight" (nếu có, thì xóa, nếu không có thì thêm)
+        element.classList.toggle("highlight");
+        
+        // Kiểm tra xem lớp "active" có tồn tại trên phần tử không
+        var hasActiveClass = element.classList.contains("active");
+        </script>
+</body>
+</html>
