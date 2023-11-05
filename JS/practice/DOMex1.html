@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEADING</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+         elit. Magni soluta alias dolores dicta cumque culpa pariatur maxime,
+          explicabo laborum doloremque exercitationem earum id asperiores ipsa distinctio ducimus eum impedit illo sint qui a. Aliquid et odio iure obcaecati, rerum iste
+         rem accusamus expedita aut voluptatem nesciunt
+          ducimus quia nemo eligendi spendida ?</p>
+          <script>
+            const paragraph = document.querySelector('p');
+            const words = paragraph.innerText.split(' ');
+        
+            const modifiedText = words.map(word => word.length > 8 ? `<span style="background-color: yellow">${word}</span>` : word).join(' ');
+            
+            paragraph.innerHTML = modifiedText;
+        </script>
+        
+</body>
+</html>
