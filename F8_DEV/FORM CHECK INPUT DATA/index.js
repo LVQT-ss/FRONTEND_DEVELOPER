@@ -21,7 +21,15 @@ function Validator(options){
     if (formElement){
         options.rules.forEach(function (rule){
             //Lưu lại các rules cho mỗi input 
-            selectorRules[rule.selector] = rule.test;
+            
+
+            if(Array.isArray(selectorRules[rule.selector])){
+                selectorRules[rule.selector].push(rule.test);
+
+            } else { 
+                selectorRules[rule.selector] = rule.test;
+            }
+
             var inputElement = formElement.querySelector(rule.selector);
             if(inputElement){
                 // xử lý trường hợp blur khỏi input 
