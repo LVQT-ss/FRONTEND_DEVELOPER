@@ -7,6 +7,8 @@ function Validator(options){
         var errorElement = inputElement.parentElement.querySelector(options.errorSelector);
         var errorMessage = rule.test(inputElement.value)
                     
+        var rules = selectorRules[rule.selector]
+        
         if (errorMessage){
             errorElement.innerText = errorMessage;
             inputElement.parentElement.classList.add('invalid');
@@ -47,7 +49,6 @@ function Validator(options){
                 }
             }
         });
-        console.log(selectorRules)
         
     }
 }
