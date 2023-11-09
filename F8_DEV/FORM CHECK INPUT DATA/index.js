@@ -2,13 +2,21 @@
 function Validator(options){
      
     var selectorRules= {};
+
     // hàm thực hiện validate 
     function validate(inputElement,rule){
         var errorElement = inputElement.parentElement.querySelector(options.errorSelector);
         var errorMessage = rule.test(inputElement.value)
                     
+        // lấy ra các rules của selector 
         var rules = selectorRules[rule.selector]
-        
+        // lặp qua từng rule và kiểm tra 
+        // nếu có lỗi thì dừng việc kiểm tra 
+        for(var i = 0; i < rule.length; ++i){
+            rules[i](inputElement.value);
+            if (errorMessage) break;
+        }
+
         if (errorMessage){
             errorElement.innerText = errorMessage;
             inputElement.parentElement.classList.add('invalid');
@@ -24,10 +32,8 @@ function Validator(options){
         options.rules.forEach(function (rule){
             //Lưu lại các rules cho mỗi input 
             
-          
 
             if(Array.isArray(selectorRules[rule.selector])){
-
                 selectorRules[rule.selector].push(rule.test);
 
             } else { 
@@ -86,7 +92,7 @@ Validator.isConfirmed = function (selector,getConfirmValue,message){
     return {
         selector: selector,
         test: function (value){
-            return value === getConfirmValue() ? undefined : message || 'Gía trị nhập vào không chính xác'
+            return value === getConfirmValue() ? undefined : message || 'Giá trị nhập vào không chính xác'
         }
     }
 }
