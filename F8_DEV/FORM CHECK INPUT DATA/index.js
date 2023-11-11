@@ -24,11 +24,32 @@ function Validator(options){
             errorElement.innerText = '';
             inputElement.parentElement.classList.remove('invalid');
         }
+        return !!errorMessage;
     }
 
 //lấy element của form cần validate 
     var formElement = document.querySelector(options.form);
     if (formElement){
+        //khi submit form 
+        formElement.onsubmit = function (e){
+            e.preventDefault();
+            var isFormVlaid = true;
+            options.rules.forEach(function (rule){
+                //lặp qua từng rules và validate 
+                var inputElement = formElement.querySelector(rule.selector);
+                var  isValid = validate(inputElement,rule);
+                if (!isValid){
+                    isFormVlaid = false;
+                }
+            });
+            if(isFormVlaid){
+                console.log('không co loi ')
+            }else { 
+                console.log('có')
+            }
+
+        }
+        //lặp qua mỗi rule và xử lý ( lắng nghe sự kiện blur , input )
         options.rules.forEach(function (rule){
             //Lưu lại các rules cho mỗi input 
             
@@ -96,3 +117,4 @@ Validator.isConfirmed = function (selector,getConfirmValue,message){
         }
     }
 }
+// validate js 
