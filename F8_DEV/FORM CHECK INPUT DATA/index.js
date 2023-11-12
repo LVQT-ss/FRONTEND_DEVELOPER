@@ -24,7 +24,7 @@ function Validator(options){
             errorElement.innerText = '';
             inputElement.parentElement.classList.remove('invalid');
         }
-        return !!errorMessage;
+        return !errorMessage;
     }
 
 //lấy element của form cần validate 
@@ -43,9 +43,9 @@ function Validator(options){
                 }
             });
             if(isFormVlaid){
-                console.log('không co loi ')
+                console.log('khong co loi ')
             }else { 
-                console.log('có')
+                console.log('có lỗi ')
             }
 
         }
