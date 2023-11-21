@@ -21,6 +21,7 @@ function showSuccess(input) {
 }
 
 function checkEmptyError(listInput) {
+
     let isEmptyError = false;
     listInput.forEach(input => {
         input.value = input.value.trim();
@@ -60,14 +61,31 @@ function checkLengthError(input,min,max){
         showError(input,`không được quá ${max} ký tự`)
         return true
     }
-    showSuccess(input)
     return false
 }
 
+function checkMatchPassword(passwordInput,cfPasswordinput){
+    if(passwordInput.value !== cfPasswordinput.value){
+    showError(cfPasswordinput,'Mật khẩu không khớp')
+    return true
+    }
+    return false
+}
 form.addEventListener('submit', function (e) {
     e.preventDefault();
+
+   
     let isEmptyError = checkEmptyError([username, email, password, confirmPassword]);
     let isEmailError = checkEmailError(email);
-    let isUsernameLengthError = checkEmailError(username);
-    let isPasswordLengthError = checkEmailError(password);
+    
+        let isUsernameLengthError = checkLengthError(username,3,10);
+        let isPasswordLengthError = checkLengthError(password,3,10);
+    
+    let isMatchError = checkMatchPassword(password,confirmPassword)
+    if (isEmptyError || isEmailError || isUsernameLengthError || isPasswordLengthError){
+        // do nothing 
+    }else {
+        //logic , vall api 
+    }
+
 });
