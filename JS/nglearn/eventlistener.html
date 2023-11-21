@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button id="myButton">This is a button</button>
+
+<script>
+    // Get the button element by its id
+    var button = document.getElementById('myButton');
+
+    function handleClick(event) {
+        console.log('Button đã được nhấn!');
+        console.log('Thông tin về sự kiện:', event);
+        console.log('Thành phần gốc:', event.target);
+    }
+
+    // Add click event listener to the button
+    button.addEventListener('click', handleClick);
+</script>
+
+</body>
+</html>
