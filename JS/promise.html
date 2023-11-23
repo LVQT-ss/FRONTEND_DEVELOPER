@@ -23,13 +23,19 @@
                 //logic 
                 // thành công : resolve()
                 // thất bại : reject ()
-                resolve();
+                
+                resolve([
+                    {
+                        id:1,
+                        name:'js'
+                    }
+                ]);
             }
         );
 
 promise
-            .then(function(){
-console.log('successfully!');
+            .then(function(course){
+console.log(course);
             })
             // bắt bẫy lỗi 
             .catch(function(){
