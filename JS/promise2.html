@@ -21,7 +21,9 @@
         })
         .then(function() {
             console.log(2);
-            return  sleep(1000);
+            return new Promise(function(resolve,reject){
+                reject('co loi!');
+            });
         })
         .then(function() {
             console.log(3);
@@ -30,6 +32,10 @@
         .then(function() {
             console.log(4);
             return  sleep(1000);
+        })
+        // cách bắt lỗi dùng .catch 
+        .catch(function(err){
+            console.log(err)
         })
     </script>
 </body>
