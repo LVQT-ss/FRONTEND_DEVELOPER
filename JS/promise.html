@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- promise dùng để giải quyết pyramid of doom  
+        pyramid of doom ( callback hell   = liên tục gọi callback quá dài ràng buộc với nhau và code dài và đọc khó hiểu )
+    
+    2 bước tạo promise 
+    1. new promise 
+    2.  executor
+
+    promise có 3 trạng thái : 1 . là pending 
+                            2 . fullfilled
+    -->
+    <script>
+        var promise = new Promise(
+            // executor 
+            function(resolve,reject){
+                //logic 
+                // thành công : resolve()
+                // thất bại : reject ()
+                resolve();
+            }
+        );
+
+promise
+            .then(function(){
+console.log('successfully!');
+            })
+            // bắt bẫy lỗi 
+            .catch(function(){
+console.log('failuere!');
+            })
+            .finally(function(){
+console.log('done!');
+            })
+    </script>
+</body>
+</html>
