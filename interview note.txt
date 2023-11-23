@@ -32,7 +32,9 @@ JAVASCRIPT
 • Bất đồng bộ trong javascript
 • setTimeout(), setInterval()   - của thuật ngữ built-in timout thì sau bao nhiêu giây thì sẽ hoạt động  interval- thì bao nhiêu giây thì nó in ra liên tục 
 • Callback
-• Promise
+• Promise - có, thứ nhất promise là khái niệm để xử lý các thao tác bất đồng bộ , trước khi có promise thì chúng ta có call back và có vấn đề là callback hell code bị khó nhìn khó hiểu nên thằng promise được ra mắt của js bản ES6 để khắc phục tình trạng và đọc code dễ hiểu hơn 
+- để tạo ra được 1 promise thì chúng ta sử dụng từ khóa new với promise là từ khóa trong constructor thì tạo 1 excutor function , trong excurtor function nhận   2 tham số khi thực thi resolve ( xử lý thành công ) và reject  (thất bại ) 
+sử dụng phương thức .then nhận resolve .catch nhận reject đều nhận callback function 
 • Module trong javascript: import, export, …
 • ES6: arrow function, for…of, async for…of, async/await, …
 • Cho các tình huống xử lý javascript, bạn vận dụng kiến thức để cung cấp giải pháp giải quyết nó.

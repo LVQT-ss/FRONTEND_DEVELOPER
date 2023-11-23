@@ -15,6 +15,8 @@
 
     promise có 3 trạng thái : 1 . là pending 
                             2 . fullfilled
+
+                           
     -->
     <script>
         var promise = new Promise(
@@ -24,6 +26,7 @@
                 // thành công : resolve()
                 // thất bại : reject ()
                 
+                //fake call api 
                 resolve([
                     {
                         id:1,
@@ -34,8 +37,10 @@
         );
 
 promise
-            .then(function(course){
-console.log(course);
+            .then(function(){
+                return new Promise(function(resolve){
+                    setTimeout(resolve,3000)
+                })
             })
             // bắt bẫy lỗi 
             .catch(function(){
@@ -47,3 +52,4 @@ console.log('done!');
     </script>
 </body>
 </html>
+
