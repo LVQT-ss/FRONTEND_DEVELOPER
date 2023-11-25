@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+  function tinhTong(a, b) {
+  return a + b;
+}
+
+// Sử dụng hàm
+var soThuNhat = 5;
+var soThuHai = 10;
+
+var tong = tinhTong(soThuNhat, soThuHai);
+console.log("Tổng của " + soThuNhat + " và " + soThuHai + " là: " + tong)
+
+// tổng 2 số 
+  const addNumbers = (a, b) => a + b;
+console.log(addNumbers(5, 3)); // 8
+// kiểm tra số chẵn 
+const isEven = num => num % 2 === 0;
+
+console.log(isEven(4)); // true
+console.log(isEven(7)); // false
+// diện tích hình chữ nhật 
+const calculateRectangleArea = (width, height) => width * height;
+
+console.log(calculateRectangleArea(4, 5)); // 20
+//  Hàm in ra màn hình danh sách sinh viên
+const students = ['John', 'Emily', 'David'];
+
+const printStudents = () => {
+  students.forEach(student => {
+    console.log(student);
+  });
+};
+
+printStudents();
+// John
+// Emily
+// David
+</script>
+</body>
+</html>
