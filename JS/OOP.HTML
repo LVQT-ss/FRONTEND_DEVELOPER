@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // đóng gói 
+//         class BankAccount {
+//   constructor(accountNumber, balance) {
+//     this.accountNumber = accountNumber;
+//     this.balance = balance;
+//   }
+
+//   deposit(amount) {
+//     this.balance += amount;
+//   }
+
+//   withdraw(amount) {
+//     if (amount <= this.balance) {
+//       this.balance -= amount;
+//     } else {
+//       console.log("Insufficient funds.");
+//     }
+//   }
+
+//   getBalance() {
+//     return this.balance;
+//   }
+// }
+
+// const myAccount = new BankAccount("123456789", 1000);
+// console.log(myAccount.getBalance()); // Output: 1000
+// myAccount.deposit(500);
+// console.log(myAccount.getBalance()); // Output: 1500
+// myAccount.withdraw(2000);
+// console.log(myAccount.getBalance()); // Output: 1300
+
+// tính kế thừa 
+// class Animal {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   speak() {
+//     console.log(`${this.name} is speaking.`);
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(name, breed) {
+//     super(name);
+//     this.breed = breed;
+//   }
+
+//   bark() {
+//     console.log(`${this.name} is barking. ${this.breed}`);
+//   }
+// }
+
+// const dog = new Dog("Buddy", "Golden Retriever");
+// dog.speak(); // Output: Buddy is speaking.
+// dog.bark(); // Output: Buddy is barking.
+
+// tính đa hình 
+// Lớp cơ sở
+// class Hinh {
+//     // Phương thức ảo
+//     ve() {
+//         console.log("Đang vẽ một hình.");
+//     }
+// }
+
+// // Lớp con 1
+// class HinhTron extends Hinh {
+//     // Ghi đè phương thức ve
+//     ve() {
+//         console.log("Đang vẽ một hình tròn.");
+//     }
+// }
+
+// // Lớp con 2
+// class HinhVuong extends Hinh {
+//     // Ghi đè phương thức ve
+//     ve() {
+//         console.log("Đang vẽ một hình vuông.");
+//     }
+// }
+
+// // Hàm chính
+// function viDuDaHinh() {
+//     // Tạo các đối tượng của các lớp con
+//     let hinh1 = new HinhTron();
+//     let hinh2 = new HinhVuong();
+
+//     // Gọi phương thức ve trên mỗi đối tượng
+//     hinh1.ve();  // Kết quả: Đang vẽ một hình tròn.
+//     hinh2.ve();  // Kết quả: Đang vẽ một hình vuông.
+// }
+
+// // Gọi hàm chính
+// viDuDaHinh();
+
+//lớp trừu tượng 
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(`${this.name} is speaking.`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, breed) {
+    super(name);
+    this.breed = breed;
+  }
+
+  speak() {
+    console.log(`${this.name} is barking.`);
+  }
+}
+
+const animal = new Animal("Generic Animal");
+const dog = new Dog("Buddy", "Golden Retriever");
+
+animal.speak(); // Output: Generic Animal is speaking.
+dog.speak(); // Output: Buddy is barking.
+
+
+
+    </script>
+</body>
+</html>
