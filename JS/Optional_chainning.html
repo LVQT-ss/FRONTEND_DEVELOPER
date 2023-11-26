@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = {
+  name: 'John',
+  address: {
+    city: 'New York',
+    street: '123 Main Street'
+  },
+  hobbies: ['reading', 'painting']
+};
+
+// Truy cập thuộc tính name của đối tượng user
+console.log(user?.name); // Output: 'John'
+
+// Truy cập thuộc tính không tồn tại
+console.log(user?.age); // Output: undefined
+
+// Truy cập thuộc tính của đối tượng con
+console.log(user?.address?.city); // Output: 'New York'
+
+// Truy cập phương thức của đối tượng
+console.log(user?.hobbies?.join(', ')); // Output: 'reading, painting'
+
+// Truy cập phương thức không tồn tại
+console.log(user?.getFullName?.()); // Output: undefined
+    </script>
+</body>
+</html>
